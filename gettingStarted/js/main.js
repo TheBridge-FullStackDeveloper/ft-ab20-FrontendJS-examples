@@ -84,3 +84,60 @@ while ( contador < 3 ) {
 	//contador += 1;
 	//contador = contador + 1;
 }
+
+/* ------------- Arrays ------------- */
+
+let resultadosLoteria = [43, [2, 3], -9, 999];
+
+console.log(typeof resultadosLoteria); // Array
+console.log(resultadosLoteria[1][1]); // 3
+
+console.log( resultadosLoteria[0] ); // 43
+console.log( resultadosLoteria[2] ); // -9
+console.log( resultadosLoteria[8] ); // undefined
+
+console.log( resultadosLoteria.length ); // 4
+
+resultadosLoteria[2] = 67;
+console.log( resultadosLoteria[2] ); // 67
+
+resultadosLoteria[8] = 99;
+console.log( resultadosLoteria.length ); // 9
+
+// Mostrar todos los resultados de la lotería
+/*
+let i = 0;
+
+while(i < resultadosLoteria.length) {
+	console.log( resultadosLoteria[i] );
+
+	i++;
+}
+*/
+
+function devolverResultados() {
+	console.log( "Y los resultados de la lotería son..." );
+
+	for (i = 0; i < resultadosLoteria.length; i++) {
+		console.log( resultadosLoteria[i] );
+	}
+}
+
+devolverResultados();
+
+let nombre = "John Doe";
+
+// Le asigna a un tratamiento a una persona dada
+function darTratamiento(nombreSinPrefijo) { // With arguments (parámetros)
+
+	let prefijo = "Sr./Sra./Srta./Srto. ";
+	let nombreConPrefijo = "";
+
+	nombreConPrefijo = prefijo + nombreSinPrefijo;
+
+	return nombreConPrefijo;
+}
+
+console.log(nombre);
+nombre = darTratamiento(nombre);
+console.log(nombre);
