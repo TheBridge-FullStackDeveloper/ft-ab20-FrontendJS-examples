@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplos JS (DOM y Eventos)</title>
+
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<h1 id="main-title">Hola mundo</h1>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis magni est voluptate esse quas commodi, eius quasi possimus id voluptas perspiciatis ea suscipit molestias, autem cupiditate ab consequuntur delectus quae!</p>
+
+	<p><a href="https://www.elmundotoday.com" id="todayworld">La actualidad del mañana</a></p>
+
+	<ul>
+		<li class="fruits">F1</li> <!-- Target -->
+		<li class="fruits" id="fruit2" onclick="destroySiblings()">F2</li> <!-- Trigger -->
+		<li class="fruits">F3</li> <!-- Target -->
+	</ul>
+	
+	<script src="js/dom.js"></script>
+</body>
+</html>
