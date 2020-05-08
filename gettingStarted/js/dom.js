@@ -18,20 +18,20 @@ myFruits[1].style.color = "";
 
 /* ----------------- Events & Handlers ----------------- */
 
-// Way 1: Anonymous callback function
+// Way 1 (RIGHT BY NOW): Anonymous callback function
 
 document.getElementById("fruit2").addEventListener("mouseover", function() {
 	document.getElementById("fruit2").style.opacity = "0";
 });
 
-// Way 2: Predeclared handler function w/ JS listener
+// Way 2 (OBSOLETE): Predeclared handler function w/ JS listener
 
 let show = function() {
 	document.getElementById("fruit2").style.opacity = "1";
 }
 document.getElementById("fruit2").addEventListener("mouseout", show);
 
-// Way 3: Predeclared handler function wo/ JS listener (inline HTML)
+// Way 3 (WRONG): Predeclared handler function wo/ JS listener (inline HTML)
 
 function destroySiblings() {
 	document.getElementById("fruit2").previousElementSibling.style.display = "none";
