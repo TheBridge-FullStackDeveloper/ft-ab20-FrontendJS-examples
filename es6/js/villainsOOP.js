@@ -1,6 +1,6 @@
 class Villain {
 
-	// Properties
+	// -------- Properties --------
 
 	constructor() {
 		this.name = ""; // string
@@ -9,27 +9,19 @@ class Villain {
 		this.damage = 0; // number
 	}
 
-	// Methods
+	// -------- Methods --------
 
-	// Private methods
-
-	heal() {
-		this.lifePoints += 5;
-	}
-
-	// Public methods
-
-	// getters
+	// Getters
 	get getMyName() {
 		return this.name;
 	}
 
-	// setters
+	// Setters
 	set setMyName(newName) {
 		this.name = newName;
 	}
 
-	// others
+	// Others
 	attack() {
 		return this.damage;
 	}
@@ -50,6 +42,10 @@ class Villain {
 		}
 
 		return "Sigo vivo";
+	}
+
+	heal() {
+		this.lifePoints += 5;
 	}
 }
 
@@ -83,24 +79,21 @@ class MegaVillain extends Villain {
 
 let villain1 = new Villain(); // Instanciate a new villain
 
-villain1.setMyName = "Joker"; // w/ setter method
-
-// wo/ setter method
+villain1.name = "Joker";
 villain1.age = -1;
 villain1.lifePoints = 20;
 villain1.damage = 10;
 
-console.log(villain1.getMyName); // Joker
-// console.log(villain1.name);
+console.log(villain1.name); // "Joker"
 
 let villain2 = new Villain(); // Instanciate another new villain
 
-villain2.name = "Thanos";
+villain2.setMyName = "Thanos"; // w/ setter method version
 villain2.age = 5000;
 villain2.lifePoints = 1000000;
 villain2.damage = 9999;
 
-console.log(villain2.getMyName);
+console.log(villain2.getMyName); // w/ getter method version
 
 /* ---------- ROUND 1: FIGHT! ------------ */
 
