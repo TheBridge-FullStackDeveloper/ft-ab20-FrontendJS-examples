@@ -1,1 +1,1 @@
-# ft-ab20-JS-examples
+# ft-ab20-FrontendJS-examples
